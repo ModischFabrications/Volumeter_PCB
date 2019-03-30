@@ -48,8 +48,6 @@ F 3 "~" H 4400 2650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 2650 4850 2650
-Wire Wire Line
 	4850 2650 4850 2600
 Wire Wire Line
 	2750 4000 3900 4000
@@ -98,17 +96,15 @@ Wire Wire Line
 Wire Wire Line
 	4850 2600 5300 2600
 Text Label 4850 2600 0    50   ~ 0
-data
+R_data
 Text Label 5150 2350 0    50   ~ 0
-+5V
+F_5V
 Text Label 5150 2900 0    50   ~ 0
 GND
 Wire Wire Line
 	5150 1550 3650 1550
 Wire Wire Line
 	5150 2200 5150 2500
-Wire Wire Line
-	5150 1550 5150 1900
 $Comp
 L Device:Polyfuse F1
 U 1 1 5CA0A446
@@ -233,4 +229,8 @@ F 3 "~" H 4150 1950 50  0001 C CNN
 	1    4150 1950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5150 1550 5150 1900
+Wire Wire Line
+	4850 2650 4550 2650
 $EndSCHEMATC

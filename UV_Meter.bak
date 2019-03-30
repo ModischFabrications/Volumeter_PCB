@@ -100,15 +100,13 @@ Wire Wire Line
 Text Label 4850 2600 0    50   ~ 0
 data
 Text Label 5150 2350 0    50   ~ 0
-+5V
+F_5V
 Text Label 5150 2900 0    50   ~ 0
 GND
 Wire Wire Line
 	5150 1550 3650 1550
 Wire Wire Line
 	5150 2200 5150 2500
-Wire Wire Line
-	5150 1550 5150 1900
 $Comp
 L Device:Polyfuse F1
 U 1 1 5CA0A446
@@ -223,14 +221,16 @@ Wire Wire Line
 Wire Wire Line
 	3900 2750 3900 3300
 $Comp
-L Connector_Generic:Conn_01x03 Audio
+L Connector_Generic:Conn_01x03 Audio1
 U 1 1 5C9FCDCD
 P 4150 1950
-F 0 "Audio" H 4230 1992 50  0000 L CNN
+F 0 "Audio1" H 4230 1992 50  0000 L CNN
 F 1 "Conn_01x03" H 4230 1901 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4150 1950 50  0001 C CNN
 F 3 "~" H 4150 1950 50  0001 C CNN
 	1    4150 1950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5150 1550 5150 1900
 $EndSCHEMATC
