@@ -193,7 +193,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 1550 5150 1900
 Wire Wire Line
-	4850 2650 4550 2650
+	4850 2650 4700 2650
 $Comp
 L Device:R R_reset1
 U 1 1 5CA11B10
@@ -254,4 +254,51 @@ Text Label 3750 1850 0    50   ~ 0
 AO
 Text Label 3350 2050 0    50   ~ 0
 reset
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CA3BE5F
+P 5250 1300
+F 0 "H1" H 5350 1346 50  0000 L CNN
+F 1 "MountingHole" H 5350 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5250 1300 50  0001 C CNN
+F 3 "~" H 5250 1300 50  0001 C CNN
+	1    5250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP2
+U 1 1 5CA3CE6C
+P 4700 2650
+F 0 "TP2" H 4758 2722 50  0001 L CNN
+F 1 "T_data" H 4758 2722 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 2650 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 2650
+Wire Wire Line
+	4700 2650 4550 2650
+$Comp
+L Connector:TestPoint_Alt TP1
+U 1 1 5CA4085E
+P 3700 1850
+F 0 "TP1" H 3758 1922 50  0001 L CNN
+F 1 "T_AO" H 3758 1922 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3900 1850 50  0001 C CNN
+F 3 "~" H 3900 1850 50  0001 C CNN
+	1    3700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP3
+U 1 1 5CA41D44
+P 3850 2750
+F 0 "TP3" H 3908 2822 50  0001 L CNN
+F 1 "T_SW" H 3908 2822 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4050 2750 50  0001 C CNN
+F 3 "~" H 4050 2750 50  0001 C CNN
+	1    3850 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

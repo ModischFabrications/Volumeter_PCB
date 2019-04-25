@@ -36,17 +36,6 @@ F 3 "" H 2750 1550 50  0001 C CNN
 	1    2750 1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R_data1
-U 1 1 5C9F3835
-P 4400 2650
-F 0 "R_data1" V 4607 2650 50  0000 C CNN
-F 1 "300" V 4516 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 2650 50  0001 C CNN
-F 3 "~" H 4400 2650 50  0001 C CNN
-	1    4400 2650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4850 2650 4850 2600
 Wire Wire Line
@@ -158,10 +147,6 @@ Wire Wire Line
 Text Label 3900 3100 0    50   ~ 0
 bt_inv
 Wire Wire Line
-	3900 2650 4250 2650
-Text Label 4000 2650 0    50   ~ 0
-data
-Wire Wire Line
 	3350 2800 3700 2800
 $Comp
 L Device:C C1
@@ -181,19 +166,11 @@ Wire Wire Line
 Wire Wire Line
 	3900 2500 3350 2500
 Wire Wire Line
-	3900 2500 3900 2650
-Wire Wire Line
 	3350 2600 3800 2600
 Wire Wire Line
 	3800 2600 3800 2750
 Wire Wire Line
-	3800 2750 3900 2750
-Wire Wire Line
-	3900 2750 3900 3300
-Wire Wire Line
 	5150 1550 5150 1900
-Wire Wire Line
-	4850 2650 4550 2650
 $Comp
 L Device:R R_reset1
 U 1 1 5CA11B10
@@ -264,5 +241,28 @@ F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5250 1300 50  0001 C CNN
 F 3 "~" H 5250 1300 50  0001 C CNN
 	1    5250 1300
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2650 4850 2650
+Wire Wire Line
+	3900 2750 3900 3300
+Wire Wire Line
+	3800 2750 3900 2750
+Wire Wire Line
+	3900 2500 3900 2650
+Text Label 4000 2650 0    50   ~ 0
+data
+Wire Wire Line
+	3900 2650 4250 2650
+$Comp
+L Device:R R_data1
+U 1 1 5C9F3835
+P 4400 2650
+F 0 "R_data1" V 4607 2650 50  0000 C CNN
+F 1 "300" V 4516 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 2650 50  0001 C CNN
+F 3 "~" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
