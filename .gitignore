@@ -26,4 +26,4 @@ _autosave-*
 
 # --- custom
 # ignore Gerber
-Gerber
+/Gerber
