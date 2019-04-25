@@ -54,7 +54,7 @@ L MCU_Microchip_ATtiny:ATtiny85-20PU U1
 U 1 1 5C9EAB30
 P 2750 2700
 F 0 "U1" H 2221 2746 50  0000 R CNN
-F 1 "ATtiny85-20PU" H 2221 2655 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 3000 2850 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 2750 2700 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2750 2700 50  0001 C CNN
 	1    2750 2700
@@ -126,24 +126,24 @@ F 3 "~" H 3900 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1450 1550 2750 1550
+	1200 1550 2750 1550
 Wire Wire Line
-	1450 4000 2750 4000
+	1200 4000 2750 4000
 $Comp
 L Connector_Generic:Conn_01x02 PWR1
 U 1 1 5CA1BCB0
-P 1050 2650
-F 0 "PWR1" H 968 2867 50  0000 C CNN
-F 1 "Conn_01x02" H 968 2776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1050 2650 50  0001 C CNN
-F 3 "~" H 1050 2650 50  0001 C CNN
-	1    1050 2650
+P 800 2650
+F 0 "PWR1" H 718 2867 50  0000 C CNN
+F 1 "Conn_01x02" H 718 2776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 2650 50  0001 C CNN
+F 3 "~" H 800 2650 50  0001 C CNN
+	1    800  2650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 2650 1450 2650
+	1000 2650 1200 2650
 Wire Wire Line
-	1250 2750 1450 2750
+	1000 2750 1200 2750
 Text Label 3900 3100 0    50   ~ 0
 bt_inv
 Wire Wire Line
@@ -151,18 +151,18 @@ Wire Wire Line
 $Comp
 L Device:C C1
 U 1 1 5C9F146E
-P 1900 2500
-F 0 "C1" H 2015 2546 50  0000 L CNN
-F 1 "100u" H 2015 2455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1938 2350 50  0001 C CNN
-F 3 "~" H 1900 2500 50  0001 C CNN
-	1    1900 2500
+P 1350 2700
+F 0 "C1" H 1465 2746 50  0000 L CNN
+F 1 "100uF" H 1465 2655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1388 2550 50  0001 C CNN
+F 3 "~" H 1350 2700 50  0001 C CNN
+	1    1350 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 1550 1450 2650
+	1200 1550 1200 2550
 Wire Wire Line
-	1450 2750 1450 4000
+	1200 2750 1200 2850
 Wire Wire Line
 	3900 2500 3350 2500
 Wire Wire Line
@@ -265,4 +265,25 @@ F 3 "~" H 4400 2650 50  0001 C CNN
 	1    4400 2650
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:C C2
+U 1 1 5CC2270E
+P 1900 2500
+F 0 "C2" H 2015 2546 50  0000 L CNN
+F 1 "100nF" H 2015 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 2350 50  0001 C CNN
+F 3 "~" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2850 1200 2850
+Connection ~ 1200 2850
+Wire Wire Line
+	1200 2850 1200 4000
+Wire Wire Line
+	1350 2550 1200 2550
+Connection ~ 1200 2550
+Wire Wire Line
+	1200 2550 1200 2650
 $EndSCHEMATC
