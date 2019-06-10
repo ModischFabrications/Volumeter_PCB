@@ -1,3 +1,0 @@
-UV_Meter_top.png filter=lfs diff=lfs merge=lfs -text
-UV_Meter.png filter=lfs diff=lfs merge=lfs -text
-UV_Meter_bottom.png filter=lfs diff=lfs merge=lfs -text
