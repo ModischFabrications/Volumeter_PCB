@@ -1,4 +1,4 @@
-# UV_Meter_PCB
+# Volumeter_PCB
 
-This is a KiCad project that models the main PCB for a UV-Meter. Code and CAD-files will be managed seperately.
+This is a KiCad project that models the main PCB for a Volume Display. Code and CAD-files will be managed seperately.
 
