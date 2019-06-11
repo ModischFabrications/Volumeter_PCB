@@ -25,5 +25,8 @@ _autosave-*
 *.csv
 
 # --- custom
-# ignore Gerber
-*Gerber*
+# ignore generated files as they can be outdated
+*Gerber/
+*Gerber.zip
+*.step
+
